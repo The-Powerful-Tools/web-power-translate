@@ -8,7 +8,15 @@
     <link href="css/custom/documentacion.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom/sidebar.css" rel="stylesheet"> 
-
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      .box {
+        height: 100%;
+      }
+    </style>
 </head>
 <body>
     <!-- NAVBAR -->
@@ -39,9 +47,9 @@
       </div>
     </nav>
       
-    
+  
     <!-- TABLA DE CONTENIDO -->
-    <aside class="sidenav">
+    <aside class="sidenav header row">
       <section>
         <header>
           <h2 style="font-size:30px;">Botname documentation</h2>
@@ -49,13 +57,18 @@
         <ul>
           <li><a href="#comando1">Comando 1</a></li>
           <li><a href="#comando2">Comando 2</a></li>
+          <li><a href="#comando2">Comando 2</a></li>
+          <li><a href="#comando2">Comando 2</a></li>
+          <li><a href="#comando2">Comando 2</a></li>
+          <li><a href="#comando2">Comando 2</a></li>
+
         </ul>
       </section>
     </aside>
     
-
+  <div class="box">
     <!-- CONTENIDO PRINCIPAL-->
-    <main id="main">
+    <main class="row content">
       <article>
         <h1 id="title-documentation">Welcome to the BOTNAME documentation!</h1>
         <div>
@@ -65,10 +78,27 @@
         <div>
           <p>Command 1 description</p>
         </div>
-      </article>
+        <h2 id="command-1">Command 1</h2>
+        <div>
+          <p>Command 1 description</p>
+        </div>
+        <h2 id="command-1">Command 1</h2>
+        <div>
+          <p>Command 1 description</p>
+        </div>
+        <h2 id="command-1">Command 1</h2>
+        <div>
+          <p>Command 1 description</p>
+        </div>
+        <h2 id="command-1">Command 1</h2>
+        <div>
+          <p>Command 1 description</p>
+        </div>
+      </article>  
+  </div>
     </main>    
-    <footer id="footer" style="border-top: 1px solid gray;">
-
+    <footer>
+      <hr>
       <p>Copyright© Mark-NUV, Fabián, Ivamn y Rony - 2021</p>
 
     </footer>
