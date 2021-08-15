@@ -8,6 +8,7 @@
     <link href="css/custom/documentacion.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom/sidebar.css" rel="stylesheet"> 
+    <link href="css/all.css" rel="stylesheet">
     <style>
       html, body {
         height: 100%;
@@ -19,14 +20,15 @@
     </style>
 </head>
 <body>
+  
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="translateicon.png" width="57" height="57"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-controls="navbarSupportedContent collapsible-bar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse multi-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
@@ -46,57 +48,106 @@
         </div>
       </div>
     </nav>
-      
-  
-    <!-- TABLA DE CONTENIDO -->
-    <aside class="sidenav header row">
-      <section>
-        <header>
-          <h2 style="font-size:30px;">Botname documentation</h2>
-        </header>
-        <ul>
-          <li><a href="#comando1">Comando 1</a></li>
-          <li><a href="#comando2">Comando 2</a></li>
-          <li><a href="#comando2">Comando 2</a></li>
-          <li><a href="#comando2">Comando 2</a></li>
-          <li><a href="#comando2">Comando 2</a></li>
-          <li><a href="#comando2">Comando 2</a></li>
 
-        </ul>
-      </section>
-    </aside>
+    <div>
+    <div class="d-flex flex-row bd-highlight mb-2">
+      <div id="collapsible-bar" class="p-2 bd-highlight multi-collapse d-none d-lg-block d-xl-none">
+        <!-- TABLA DE CONTENIDO -->
     
-  <div class="box">
-    <!-- CONTENIDO PRINCIPAL-->
-    <main class="row content">
-      <article>
-        <h1 id="title-documentation">Welcome to the BOTNAME documentation!</h1>
-        <div>
-          <p>We are going to describe how to use and the functions of each command!</p>
+    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+      <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-5 fw-semibold">Collapsible</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          Home
+        </button>
+        <div class="collapse show" id="home-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">Overview</a></li>
+            <li><a href="#" class="link-dark rounded">Updates</a></li>
+            <li><a href="#" class="link-dark rounded">Reports</a></li>
+          </ul>
         </div>
-        <h2 id="command-1">Command 1</h2>
-        <div>
-          <p>Command 1 description</p>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Dashboard
+        </button>
+        <div class="collapse" id="dashboard-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">Overview</a></li>
+            <li><a href="#" class="link-dark rounded">Weekly</a></li>
+            <li><a href="#" class="link-dark rounded">Monthly</a></li>
+            <li><a href="#" class="link-dark rounded">Annually</a></li>
+          </ul>
         </div>
-        <h2 id="command-1">Command 1</h2>
-        <div>
-          <p>Command 1 description</p>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Orders
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">New</a></li>
+            <li><a href="#" class="link-dark rounded">Processed</a></li>
+            <li><a href="#" class="link-dark rounded">Shipped</a></li>
+            <li><a href="#" class="link-dark rounded">Returned</a></li>
+          </ul>
         </div>
-        <h2 id="command-1">Command 1</h2>
-        <div>
-          <p>Command 1 description</p>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Account
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">New...</a></li>
+            <li><a href="#" class="link-dark rounded">Profile</a></li>
+            <li><a href="#" class="link-dark rounded">Settings</a></li>
+            <li><a href="#" class="link-dark rounded">Sign out</a></li>
+          </ul>
         </div>
-        <h2 id="command-1">Command 1</h2>
-        <div>
-          <p>Command 1 description</p>
+      </li>
+    </ul>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="box">
+          <!-- CONTENIDO PRINCIPAL-->
+          <main class="row content">
+            <article>
+              <h1 id="title-documentation">Welcome to the BOTNAME documentation!</h1>
+              <div>
+                <p>We are going to describe how to use and the functions of each command!</p>
+              </div>
+              <h2 id="command-1">Command 1</h2>
+              <div>
+                <p>Command 1 description</p>
+              </div>
+              <h2 id="command-1">Command 1</h2>
+              <div>
+                <p>Command 1 description</p>
+              </div>
+              <h2 id="command-1">Command 1</h2>
+              <div>
+                <p>Command 1 description</p>
+              </div>
+              <h2 id="command-1">Command 1</h2>
+              <div>
+                <p>Command 1 description</p>
+              </div>
+              <h2 id="command-1">Command 1</h2>
+              <div>
+                <p>Command 1 description</p>
+              </div>
+            </article>  
         </div>
-        <h2 id="command-1">Command 1</h2>
-        <div>
-          <p>Command 1 description</p>
-        </div>
-      </article>  
-  </div>
-    </main>    
+          </main> 
+        </div>   
+      </div>
+    </div>
     <footer>
       <hr>
       <p>Copyright© Mark-NUV, Fabián, Ivamn y Rony - 2021</p>
