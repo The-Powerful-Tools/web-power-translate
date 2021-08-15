@@ -1,0 +1,19 @@
+a {
+    text-decoration: none;
+}
+
+.sidenav {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 18%;
+    float:left;
+    overflow: auto;
+}
+
+.sidenav > section > ul {
+    display:flex;
+    flex-direction: column;
+    list-style-type: none;
+    
+}
