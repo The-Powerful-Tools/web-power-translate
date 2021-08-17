@@ -1,189 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PajeForBotTransletter</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/all.css" rel="stylesheet">
-    <style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PajeForBotTransletter</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+  <style>
+    #side-bar {
+      position: sticky;
+      top: 20px;
+    }
 
+    ul {
+      list-style-image: ;
+    }
+
+    a {
+      color: ;
+    }
+
+    .gray {
+      color: gray;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    .gray:focus {
+      color: black;
+    }
+
+    .transformancle {
+      transform: rotate(90deg);
+    }
+
+
+    @media only screen and (min-width: 1000px) {
       #side-bar {
-        position:sticky;
-        top:20px;
+        height: 20%;
       }
-
-      ul {
-        list-style-image: ;
-      }
-
-      a {
-        color:;
-      }
-
-      .gray {
-        color: gray;
-        text-decoration: none;
-        font-size: 1.1em;
-      }
-      .gray:focus{
-        color:black;
-      }
-
-      @media only screen and (min-width: 1000px) {
-        #side-bar {
-          height: 20%;
-        }
-}
-    </style>
+    }
+  </style>
 </head>
+
 <body>
-  
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="translateicon.png" width="57" height="57"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-controls="navbarSupportedContent collapsible-bar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse multi-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="documentacion.html">Documentation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactanos.html">Contact Us</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item">
-              <a class="btn btn-primary" href="nohe.html">Add to Server</a>
-            </li>
-          </ul>
-        </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="translateicon.png" width="57" height="57"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+        aria-controls="navbarSupportedContent collapsible-bar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse multi-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="documentacion.html">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactanos.html">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="btn btn-primary" href="nohe.html">Add to Server</a>
+          </li>
+        </ul>
       </div>
-    </nav>
- 
-        <div class="row container-fluid" style="margin-top: 25px;">
+    </div>
+  </nav>
 
-          <!-- TABLA DE CONTENIDO -->
-          <div class="col-lg-2" >
-            <nav class="nav flex-column" id="side-bar">
-              <ul class="list-unstyled mb-0 py-3 pt-md-1 fa-ul">
-                <li>
-                  <span class="fa-li">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                  <a href="#" class="gray" data-bs-toggle="collapse" data-bs-target="#Section1" aria-expanded="false" aria-current="true">
-                    Introduction
-                  </a>
-                  <div class="collapse" id="Section1">
-                    <a>Section 1</a>
-                  </div>
-                </li>
-                <li>
-                  <span class="fa-li">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                  <a href="#" class="gray" data-bs-toggle="collapse" data-bs-target="#Section2" aria-expanded="false" aria-current="true">Contenido
+  <div class="row container-fluid" style="margin-top: 25px;">
 
-                  </a>
-                  <div class="collapse" id="Section2">
-                    <a>Section 2</a>
-                  </div>
-                </li>
-                <li>
-                  <span class="fa-li">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                  <a href="#" class="gray" data-bs-toggle="collapse" data-bs-target="#Section3" aria-expanded="false" aria-current="true">Contenido
+    <!-- TABLA DE CONTENIDO -->
+    <div class="col-lg-2">
+      <nav class="nav flex-column" id="side-bar">
+        <ul class="list-unstyled mb-0 py-3 pt-md-1 fa-ul">
+          <li>
+            <span id="fa1" class="fa-li">
+              <i class="fas fa-angle-right"></i>
+            </span>
+            <a id="a1" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse"
+              data-bs-target="#Section1" aria-expanded="false" aria-current="true">
+              Introduction
+            </a>
+            <div class="collapse" id="Section1">
+              <a>Section 1</a>
+            </div>
+          </li>
+          <li>
+            <span id="fa2" class="fa-li">
+              <i class="fas fa-angle-right"></i>
+            </span>
+            <a id="a2" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse"
+              data-bs-target="#Section2" aria-expanded="false" aria-current="true">Contenido
 
-                  </a>
-                  <div class="collapse" id="Section3">
-                    <a>Section 3</a>
-                  </div>
-                </li>
-                <li>
-                  <span class="fa-li">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                  <a href="#" class="gray" data-bs-toggle="collapse" data-bs-target="#Section4" aria-expanded="false" aria-current="true">Contenido
+            </a>
+            <div class="collapse" id="Section2">
+              <a>Section 2</a>
+            </div>
+          </li>
+          <li>
+            <span id="fa3" class="fa-li">
+              <i class="fas fa-angle-right"></i>
+            </span>
+            <a id="a3" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse"
+              data-bs-target="#Section3" aria-expanded="false" aria-current="true">Contenido
 
-                  </a>
-                  <div class="collapse" id="Section4">
-                    <a>Section 4</a>
-                  </div>
-                </li>
-                <li>
-                  <span class="fa-li">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                  <a href="#" class="gray" data-bs-toggle="collapse" data-bs-target="#Section5" aria-expanded="false" aria-current="true">Contenido
+            </a>
+            <div class="collapse" id="Section3">
+              <a>Section 3</a>
+            </div>
+          </li>
+          <li>
+            <span id="fa4" class="fa-li">
+              <i class="fas fa-angle-right"></i>
+            </span>
+            <a id="a4" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse"
+              data-bs-target="#Section4" aria-expanded="false" aria-current="true">Contenido
 
-                  </a>
-                  <div class="collapse" id="Section5">
-                    <a>Section 5</a>
-                  </div>
-                </li>
-                <li>
-                  <span class="fa-li">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                  <a href="#" class="gray" data-bs-toggle="collapse" data-bs-target="#Section6" aria-expanded="false" aria-current="true">Contenido
+            </a>
+            <div class="collapse" id="Section4">
+              <a>Section 4</a>
+            </div>
+          </li>
+          <li>
+            <span id="fa5" class="fa-li">
+              <i class="fas fa-angle-right"></i>
+            </span>
+            <a id="a5" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse"
+              data-bs-target="#Section5" aria-expanded="false" aria-current="true">Contenido
 
-                  </a>
-                  <div class="collapse" id="Section6">
-                    <a>Section 6</a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- CONTENIDO PRINCIPAL-->
-          <main class="col">
-            <article>
-              <h1 id="title-documentation">Introduction</h1>
+            </a>
+            <div class="collapse" id="Section5">
+              <a>Section 5</a>
+            </div>
+          </li>
+          <li>
+            <span id="fa6" class="fa-li">
+              <i class="fas fa-angle-right"></i>
+            </span>
+            <a id="a6" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse"
+              data-bs-target="#Section6" aria-expanded="false" aria-current="true">Contenido
 
-              <div>
-                <p>Welcome to the Translator Power Bot documentation! We will give you an explanation of how to use the bot and the commands!</p>
+            </a>
+            <div class="collapse" id="Section6">
+              <a>Section 6</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- CONTENIDO PRINCIPAL-->
+    <main class="col">
+      <article>
+        <h1 id="title-documentation">Introduction</h1>
 
-              </div>
+        <div>
+          <p>Welcome to the Translator Power Bot documentation! We will give you an explanation of how to use the bot
+            and the commands!</p>
 
-              <h2>Functions</h2>
-              <div>
-                <p>This bot helps you to comunicate between people of all around the world!</p>
-                <p>If you want to add the bot to your server, click <a href="#">this button</a></p>
-              </div>
-
-              <h2>Compatible lenguages</h2>
-              <div>
-                <ul>
-                <p>We have 10 compatible languages </p>
-                <li>English (bruh)</li>
-                <li>Spanish</li>
-                <li>German</li>
-                <li>French</li>
-                <li>Portuguese</li>
-                </ul>
-                
-              </div>
-          </main>
         </div>
 
-        <!-- FOOTER -->
-        <footer>
-          <hr>
-          <p>Copyright© Mark-NUV, Fabián, Ivamn y Rony - 2021</p>
-        </footer>
-          
+        <h2>Functions</h2>
+        <div>
+          <p>This bot helps you to comunicate between people of all around the world!</p>
+          <p>If you want to add the bot to your server, click <a href="#">this button</a></p>
+        </div>
+
+        <h2>Compatible lenguages</h2>
+        <div>
+          <ul>
+            <p>We have 10 compatible languages </p>
+            <li>English (bruh)</li>
+            <li>Spanish</li>
+            <li>German</li>
+            <li>French</li>
+            <li>Portuguese</li>
+          </ul>
+
+        </div>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <hr>
+    <p>Copyright© Mark-NUV, Fabián, Ivamn y Rony - 2021</p>
+  </footer>
 
 
-    <!-- Bootstrap yei es ( J S )-->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom/documentacion.js"></script>
+
+  <!-- Bootstrap yei es ( J S )-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom/documentacion.js"></script>
 </body>
+
 </html>
