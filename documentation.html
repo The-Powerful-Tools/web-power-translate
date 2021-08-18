@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Traslate Power</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/custom/documentation.css" rel="stylesheet">
+    <link href="favico.ico" rel="shortcut icon">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="favico.ico" width="47" height="47"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-controls="navbarSupportedContent collapsible-bar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse multi-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="documentation.html">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="IHAVE.html">Add to Server</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row container-fluid" style="margin-top: 25px;">
+
+        <!-- TABLA DE CONTENIDO -->
+
+        <div class="col-lg-2" id="border-sidebar">
+            <nav class="nav flex-column" id="side-bar">
+                <div class="text-center d-lg-none">Índice</div>
+                <ul class="list-unstyled mb-0 py-3 pt-md-1 ms-2">
+                    <li class="mb-1">
+                        <i class="fas fa-angle-right" id="fa1"></i>
+                        <a id="a1" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse" data-bs-target="#Section1" aria-expanded="false" aria-current="true">
+              Introduction
+            </a>
+                        <div class="collapse ms-2" id="Section1">
+                            <ul class="list-unstyled ms-2">
+                                <li>
+                                    <a href="#" class="section">Functions</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="section">Compatible languages</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="section">Language codes</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <i class="fas fa-angle-right" id="fa2"></i>
+                        <a id="a2" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse" data-bs-target="#Section2" aria-expanded="false" aria-current="true">
+              Translate Commands
+            </a>
+                        <div class="collapse ms-2" id="Section2">
+                            <ul class="list-unstyled ms-2">
+                                <li>
+                                    <a href="#lang" class="section">.lang</a>
+                                </li>
+                                <li>
+                                    <a href="#setLang" class="section">.set_lang</a>
+                                </li>
+                                <li>
+                                    <a href="#setChannel" class="section">.set_channel</a>
+                                </li>
+                                <li>
+                                    <a href="#setDeletech" class="section">.set_deletech</a>
+                                </li>
+                                <li>
+                                    <a href="#ts" class="section">.ts</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="mb-1">
+                        <i class="fas fa-angle-right" id="fa3"></i>
+                        <a id="a3" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse" data-bs-target="#Section3" aria-expanded="false" aria-current="true">
+              Info commands
+            </a>
+                        <div class="collapse ms-2" id="Section3">
+                            <ul class="list-unstyled ms-2">
+                                <li>
+                                    <a href="#infoBot" class="section">.info_bot</a>
+                                </li>
+
+                                <li>
+                                    <a href="#help" class="section">.help</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <!-- CONTENIDO PRINCIPAL-->
+        <main class="col">
+            <article>
+                <h1 class="display-4">Introduction</h1>
+
+                <div>
+                    <p>Welcome to the Traslate Power Bot documentation! We will give you an explanation of how to use the bot and the commands!</p>
+                    <p>The prefix of the bot is "."</p>
+                    <p>At this moment, you can not change the prefix, but we are working on that.</p>
+                </div>
+
+                <h2 id="functions">Functions</h2>
+                <div>
+                    <p>This bot helps you to comunicate between people of all around the world!</p>
+                    <p>If you want to add the bot to your server, click <a href="IHAVE.html">here</a>.</p>
+                </div>
+
+                <h2 id="compatibleLanguages">Compatible languages</h2>
+                <div>
+                    <p>We have 10 compatible languages </p>
+                    <ul>
+                        <li>English (bruh)</li>
+                        <li>Spanish</li>
+                        <li>German</li>
+                        <li>French</li>
+                        <li>Portuguese</li>
+                        <li>Italian</li>
+                        <li>Russian</li>
+                        <li>Swedish</li>
+                        <li>Japanese</li>
+                        <li>Korean</li>
+                        <li>Simplified Chinese</li>
+
+                    </ul>
+                    <h3 id="languageCodes">Languages codes</h3>
+                    <p>We also have a code for each language</p>
+                    <ul>
+                        <li>English - en</li>
+                        <li>Spanish - es</li>
+                        <li>German - de</li>
+                        <li>French - fr</li>
+                        <li>Portuguese - pt</li>
+                        <li>Italian - it</li>
+                        <li>Russian - ru</li>
+                        <li>Swedish - sv</li>
+                        <li>Japanese - ja</li>
+                        <li>Korean - ko</li>
+                        <li>Simplified Chinese - cn</li>
+                    </ul>
+                </div>
+
+                <hr>
+                <h2 class="display-5">Translate commands</h2>
+                <div>
+                    <p>In this section we are going to talk about the server commands in the bot</p>
+                </div>
+                <h2 id="lang">.lang</h2>
+                <div>
+                    <p>The .lang command displays information about the current language configurated on the server</p>
+                </div>
+                <h2 id="setLang">.set_lang</h2>
+                <div>
+                    <p>With the .set_lang command you can configurate the global language of the server</p>
+                    <p>Example, configure the server to spanish</p>
+                    <pre>.set_lang es</pre>
+                </div>
+                <h2 id="setChannel">.set_channel</h2>
+                <div>
+                    <p>This command set a channel in an specified language and auto-translate every message in the channel to the language previously set</p>
+                    <p>Example, configure channel #general, to french</p>
+                    <pre>.set_channel #general fr</pre>
+                </div>
+                <h2 id="setDeletech">.set_deletech</h2>
+                <div>
+                    <p>With this command you can deactivate the auto-translate</p>
+                </div>
+
+                <h2 id="ts">.ts</h2>
+                <div>
+                    <p>You can use .ts to translate any message to the configurated global language</p>
+                </div>
+                <hr>
+                <h2 class="display-5">Info commands</h2>
+
+                <h2 id="infoBot">.info_bot</h2>
+                <div>
+                    <p>.info_bot displays information about the bot</p>
+                </div>
+                <h2 id="help">.help</h2>
+                <div>
+                    <p>Prints the link to this documentation</p>
+                </div>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <p class="text-center">Copyright© Mark-NUV, Fabián, Rony e Ivamn - 2021</p>
+        <p class="text-center">Powered by <a href="https://getbootstrap.com/">Bootstrap</a></p>
+    </footer>
+
+    <!-- Bootstrap yei es ( J S )-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom/documentation.js"></script>
+</body>
+
+</html>

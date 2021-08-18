@@ -1,0 +1,44 @@
+#side-bar {
+    position: sticky;
+    top: 20px;
+}
+
+.black {
+    color: #262626;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.gray {
+    color: #6d6d6d;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.gray:focus {
+    color: black;
+}
+
+.transformancle {
+    transform: rotate(90deg);
+}
+
+@media only screen and (min-width: 1000px) {
+    #side-bar {
+        height: 20%;
+        border-right: 1px solid #dee2e6;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    #side-bar {
+        border: 2px solid black;
+        background-color: #dddddd;
+        margin-bottom: 25px;
+    }
+}
+
+.section {
+    color: #6d6d6d;
+    text-decoration: none;
+}
