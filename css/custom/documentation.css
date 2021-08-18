@@ -23,9 +23,12 @@
     transform: rotate(90deg);
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 992px) {
     #side-bar {
         height: 20%;
+    }
+
+    #border-sidebar {
         border-right: 1px solid #dee2e6;
     }
 }
