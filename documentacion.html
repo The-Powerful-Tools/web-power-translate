@@ -14,10 +14,6 @@
       top: 20px;
     }
 
-    ul {
-      list-style-image: ;
-    }
-
     .black {
       color:#262626;
       text-decoration: none;
@@ -42,6 +38,8 @@
     @media only screen and (min-width: 1000px) {
       #side-bar {
         height: 20%;
+        border-right: 1px solid #dee2e6;
+
       }
     }
 
@@ -65,7 +63,7 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="translateicon.png" width="57" height="57"></a>
+      <a class="navbar-brand" href="index.html"><img src="translateicon.png" width="47" height="47"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
         aria-controls="navbarSupportedContent collapsible-bar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -95,7 +93,7 @@
 
     <!-- TABLA DE CONTENIDO -->
     
-    <div class="col-lg-2">
+    <div class="col-lg-2" id="border-sidebar">
       <nav class="nav flex-column" id="side-bar">
         <div class="text-center d-lg-none">Índice</div>
         <ul class="list-unstyled mb-0 py-3 pt-md-1 ms-2">
@@ -113,6 +111,10 @@
                 <li>
                   <a href="#" class="section">Compatible languages</a>
                 </li>
+
+                <li>
+                  <a href="#" class="section">Language codes</a>
+                </li>
               </ul>
 
             </div>
@@ -121,17 +123,49 @@
               <i class="fas fa-angle-right" id="fa2"></i>
             <a id="a2" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse"
               data-bs-target="#Section2" aria-expanded="false" aria-current="true">
-              Contenido
+              Translate Commands
             </a>
             <div class="collapse ms-2" id="Section2">
               <ul class="list-unstyled ms-2">
                 <li>
-                  <a href="#" class="section">Section 2</a>
+                  <a href="#lang" class="section">.lang</a>
+                </li>
+                <li>
+                  <a href="#setLang" class="section">.set_lang</a>
+                </li>
+                <li>
+                  <a href="#setChannel" class="section">.set_channel</a>
+                </li>
+                <li>
+                  <a href="#setDeletech" class="section">.set_deletech</a>
+                </li>
+                <li>
+                  <a href="#ts" class="section">.ts</a>
                 </li>
               </ul>
 
             </div>
           </li>
+
+          <li class="mb-1">
+            <i class="fas fa-angle-right" id="fa3"></i>
+          <a id="a3" onclick="Voltear(this)" href="#" class="gray" data-bs-toggle="collapse"
+            data-bs-target="#Section3" aria-expanded="false" aria-current="true">
+            Info commands
+          </a>
+          <div class="collapse ms-2" id="Section3">
+            <ul class="list-unstyled ms-2">
+              <li>
+                <a href="#infoBot" class="section">.info_bot</a>
+              </li>
+
+              <li>
+                <a href="#help" class="section">.help</a>
+              </li>
+            </ul>
+
+          </div>
+        </li>
 
         </ul>
       </nav>
@@ -139,7 +173,7 @@
     <!-- CONTENIDO PRINCIPAL-->
     <main class="col">
       <article>
-        <h1 id="title-documentation">Introduction</h1>
+        <h1 class="display-4">Introduction</h1>
 
         <div>
           <p>Welcome to the Translator Power Bot documentation! We will give you an explanation of how to use the bot
@@ -148,13 +182,13 @@
           <p>At this moment, you can not change the prefix, but we are working on that.</p>
         </div>
 
-        <h2>Functions</h2>
+        <h2 id="functions">Functions</h2>
         <div>
           <p>This bot helps you to comunicate between people of all around the world!</p>
           <p>If you want to add the bot to your server, click <a href="#">here</a>.</p>
         </div>
 
-        <h2>Compatible languages</h2>
+        <h2 id="compatibleLanguages">Compatible languages</h2>
         <div>
           <p>We have 10 compatible languages </p>
           <ul>
@@ -171,7 +205,7 @@
             <li>Simplified Chinese</li>
 
           </ul>
-          <h3>Languages codes</h3>
+          <h3 id="languageCodes">Languages codes</h3>
           <p>We also have a code for each language</p>
           <ul>
             <li>English - en</li>
@@ -189,41 +223,45 @@
         </div>
 
         <hr>
-        <h2>Server commands</h2>
+        <h2 class="display-5">Translate commands</h2>
          <div>
            <p>In this section we are going to talk about the server commands in the bot</p>
           </div>
-          <h2>.lang</h2>
+          <h2 id="lang">.lang</h2>
           <div>
             <p>The .lang command displays information about the current language configurated on the server</p>
           </div>
-          <h2>.set_lang</h2>
+          <h2 id="setLang">.set_lang</h2>
           <div>
             <p>With the .set_lang command you can configurate the global language of the server</p>
             <p>Example, configure the server to spanish</p>
             <pre>.set_lang es</pre>
           </div>
-          <h2>.set_channel</h2>
+          <h2 id="setChannel">.set_channel</h2>
           <div>
             <p>This command set a channel in an specified language and auto-translate every message in the channel to the language previously set</p>
             <p>Example, configure channel #general, to french</p>
             <pre>.set_channel #general fr</pre>
           </div>
-          <h2>.set_deletech</h2>
+          <h2 id="setDeletech">.set_deletech</h2>
             <div>
               <p>With this command you can deactivate the auto-translate</p>
             </div>
-          <h2>.info_bot</h2>
+
+          <h2 id="ts">.ts</h2>
+            <div>
+              <p>You can use .ts to translate any message to the configurated global language</p>
+            </div>
+            <hr>
+            <h2 class="display-5">Info commands</h2>
+
+            <h2 id="infoBot">.info_bot</h2>
             <div>
               <p>.info_bot displays information about the bot</p>
             </div>
-          <h2>.help</h2>
+          <h2 id="help">.help</h2>
             <div>
-              <p>.help command share the link to this documentation</p>
-            </div>
-          <h2>.ts</h2>
-            <div>
-              <p>You can use .ts to translate any message to the configurated global language</p>
+              <p>Prints the link to this documentation</p>
             </div>
     </main>
   </div>

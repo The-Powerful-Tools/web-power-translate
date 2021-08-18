@@ -6,13 +6,18 @@
     <title>PajeForBotTransletter</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/all.css" rel="stylesheet">
-
+    <style>
+      .cosito {
+        padding: 3rem 0;
+        background: linear-gradient(200deg, #efefef 50%, #fff 50%)
+      }
+    </style>
 </head> 
 <body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="translateicon.png" width="57" height="57"></a>
+      <a class="navbar-brand" href="#"><img src="translateicon.png" width="47" height="47"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-controls="navbarSupportedContent collapsible-bar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,78 +42,39 @@
     </div>
   </nav>
 
-    <!-- SLIDES -->
-
-    <style>
-      .carousel-item {
-        height:32rem;
-        background:#777;
-        color:White;
-        position:relative;
-        background-position: center;
-        background-size: cover;
-      }
-      .container {
-        position:absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding-bottom: 50px;
-      }
-
-    </style>
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" style="background-image: url(./ural-owl-6529375_1920.jpg);">
-
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Talk with anyone!</h1>
-          <p>You can talk with anyone in the language you want!</p>
-          <p><a class="btn btn-lg btn-primary" href="#">Compatible languages</a></p>
+  <main>
+    <div class="mb-3 cosito">
+    <div class="container px-4 px-md-3">
+      <div class="row align-items-lg-center">
+        <div class="col-8 mx-auto col-md-4 order-md-2 col-lg-5">
+          <img src="translateicon.png" width="600" height="500" class="img-fluid mb-3 mb-md-0 rounded">
+        </div>
+        <div class="col-md-8 order-md-1 col-lg-7 text-center text-md-start">
+          <h1 class="mb-3">Translate anything with Translator Power!</h1>
+          <p class="lead mb-4">
+            Translator power is user friendly with didactics commands and more than 10 compatible languages!
+          </p>
+  
+          <div class="d-flex flex-column flex-md-row">
+            <a href="/docs/5.1/getting-started/introduction/" class="btn btn-lg btn-primary mb-3 me-md-3">Add to server</a>
+          </div>
         </div>
       </div>
+  
     </div>
-    <div class="carousel-item" style="background-image: url(./ural-owl-6529375_1920.jpg);">
+    </div>
+    <div class="container px-4 px-md-3">
+      <section class="row mb-5 pb-md-4 align-items-center">
 
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Easy commands!</h1>
-          <p>Use !ts to do something</p>
-          <p><a class="btn btn-lg btn-primary" href="#">See commands</a></p>
-        </div>
-      </div>
+      </section>
     </div>
-    <div class="carousel-item" style="background-image: url(./images.png);">
-
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>XD</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis ea, debitis perspiciatis magni labore ab error reprehenderit a nisi animi quas maxime laudantium! Deleniti eum perspiciatis quis quo ea?</p>
-          <p><a class="btn btn-lg btn-primary" href="#">Add to server</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  
+  </main>
 
   <footer>
     <hr>
-  <p class="text-dark">Copyright© Mark-NUV, Fabián, Ivamn y Rony - 2021</p>
+    <p class="text-center">Copyright© Mark-NUV, Fabián, Rony e Ivamn - 2021</p>
   </footer>
-</div>
 <script src="js/bootstrap.min.js"></script>
 
 </body>
