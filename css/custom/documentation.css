@@ -45,3 +45,20 @@
     color: #6d6d6d;
     text-decoration: none;
 }
+
+.ancle-doc::before {
+    content: url(../../angle-right-solid.svg);
+    width: 0.75em;
+    margin-top: 0.1em;
+    margin-right: 0.4em;
+    line-height: 0;
+    transition: transform 0.3s ease;
+}
+
+.ancle-doc[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+
+.ancle-doc[aria-expanded="true"] {
+    color:black;
+}
