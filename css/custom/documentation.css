@@ -16,36 +16,18 @@
 }
 
 .gray:hover {
-    color: #6d6d6d;
+    color: #262626;
     text-decoration: none;
     font-size: 1.1em;
-}
-
-.transformancle {
-    transform: rotate(90deg);
-}
-
-@media only screen and (min-width: 992px) {
-    #side-bar {
-        height: 20%;
-    }
-
-    #border-sidebar {
-        border-right: 1px solid #dee2e6;
-    }
-}
-
-@media only screen and (max-width:991px) {
-    #side-bar {
-        border: 2px solid black;
-        background-color: #dddddd;
-        margin-bottom: 25px;
-    }
 }
 
 .section {
     color: #6d6d6d;
     text-decoration: none;
+}
+
+.section:hover {
+    color: #262626;
 }
 
 .ancle-doc::before {
@@ -63,4 +45,30 @@
 
 .ancle-doc[aria-expanded="true"] {
     color:black;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    #border-sidebar {
+        border-right: 1px solid #dee2e6;
+        
+    }
+
+    .left {
+        width:80%;
+        padding-left: 20px;
+    }
+
+    .right {
+        width:20%;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    #side-bar {
+        border: 2px solid black;
+        background-color: #dddddd;
+        margin-bottom: 25px;
+    }
 }
