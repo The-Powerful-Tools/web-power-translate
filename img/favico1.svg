@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="favicon-1" serif:id="favicon 1">
+        <path d="M800,138.175C800,61.914 738.086,0 661.825,0L138.175,0C61.914,0 0,61.914 0,138.175L0,661.825C0,738.086 61.914,800 138.175,800L661.825,800C738.086,800 800,738.086 800,661.825L800,138.175Z" style="fill:rgb(241,241,241);"/>
+        <g transform="matrix(65.6123,0,0,65.6123,-15102.1,-20529.1)">
+            <text x="232.577px" y="323.299px" style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:12px;">T</text>
+        </g>
+    </g>
+</svg>
