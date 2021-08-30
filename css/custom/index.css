@@ -2,3 +2,12 @@
     padding: 3rem 0;
     background: linear-gradient(200deg, #cccccc 50%, #fff 50%)
 }
+
+
+.button-add, .button-add:hover {
+    background-color:#2b52e1;;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none
+}

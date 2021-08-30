@@ -1,0 +1,13 @@
+.boton-nav, .boton-nav:hover {
+    background-color:#2b52e1;;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .boton-container {
+        margin: 15px 0px;
+    }
+}
